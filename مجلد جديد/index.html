@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="text">
+    <h2> Contact Us</h2>
+    <span id ="error"></span>
+  </div>
+  <div class="container">
+    <div class="back">
+      <form class="one" onsubmit="return formValidate();" novalidate action="index _Sgin.html">
+        <input type="text" placeholder="UserName" id="UserName" required minlength="5">
+        <input type="email" placeholder="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <input type="password" placeholder="password" id="password" required minlength="8">
+        <input type="tel" placeholder="phone" id="phone" required maxlength="11">
+        <input type="submit">
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
